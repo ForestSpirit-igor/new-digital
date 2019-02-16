@@ -1,0 +1,371 @@
+/* ----- Points ------------------- */
+/*social*/
+.social
+  &__item
+    display: inline-block
+    vertical-align: top
+    margin: 0 4px
+
+    &:first-child
+      margin-left: 0
+
+    .icon
+      &:hover
+        opacity: 0.8
+
+/*contact*/
+.contact
+  line-height: 1px
+
+  &-item
+    display: inline-block
+    vertical-align: middle
+    text-decoration: none
+    margin-left: 15px
+
+    &:hover
+      .contact-item__txt
+        text-decoration: underline
+
+    &__txt
+      font-size: 14px
+      font-weight: 700
+      line-height: 18px
+      color: $cl-light
+      margin-left: 8px
+      padding-top: 2px
+      vertical-align: middle
+
+    &__icon
+      display: inline-block
+      vertical-align: middle
+      line-height: 1px
+
+/*icons*/
+.main-icons
+  margin-top: 30px
+
+.main-icons_grid-four
+  display: flex
+  justify-content: flex-start
+  flex-wrap: wrap
+  margin-left: -5px
+  margin-right: -5px
+
+  .main-icon
+    width: 50%
+    padding-left: 5px
+    padding-right: 5px
+
+.main-icons_grid-three
+  .main-icon__icon
+    min-width: 56px
+    text-align: center
+
+  .main-icon__txt
+    padding-bottom: 0
+
+.main-icon
+  text-decoration: none
+  outline: none
+  display: flex
+  justify-content: flex-start
+  align-items: center
+  max-width: 250px
+  margin: 0 auto 20px
+
+  &_column
+    flex-direction: column
+    text-align: center
+    align-items: stretch
+
+    .main-icon__icon
+      margin-bottom: 15px
+      margin-right: 0
+      min-height: 60px
+      line-height: 60px
+
+    .main-icon__txt
+      text-align: center
+
+  &__icon
+    flex-shrink: 0
+    margin-right: 10px
+
+  &__txt
+    font-size: 13px
+    line-height: 17px
+    color: $cl-emperor
+    text-align: left
+    padding-bottom: 7px
+
+    &_light
+      color: $cl-light
+
+.main-icon-content
+  &__tt
+    font-size: 16px
+    line-height: 17px
+    color: $cl-torea-bay
+
+  &__price
+    font-size: 16px
+    line-height: 17px
+    color: $cl-emperor
+    margin: 5px 0
+
+  &__txt
+    color: $cl-emperor
+    font-size: 13px
+    line-height: 17px
+
+.main-icons_grid-half
+  .main-icon
+    align-items: flex-start
+
+  .main-icon__icon
+    min-width: 52px
+    text-align: right
+
+.main-icons_push
+  margin: 40px 0
+
+a.main-icon
+  &:hover
+    .main-icon__txt
+      text-decoration: underline
+
+/* Min width 480 pixels */
+@media only screen and (min-width: 480px)
+  .main-icons_grid-three
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    flex-wrap: wrap
+    margin-left: -5px
+    margin-right: -5px
+
+    .main-icon
+      max-width: none
+      width: 50%
+      margin-left: 0
+      margin-right: 0
+      padding-left: 5px
+      padding-right: 5px
+
+    .main-icon__icon
+      min-width: 56px
+      text-align: center
+  /* end media min width 480 pixels */
+
+
+/* Min width 768 pixels */
+@media only screen and (min-width: 768px)
+  .social
+    &__item
+      margin: 0 1px
+
+  .contact-item
+    margin-left: 30px
+
+  .main-icons
+    display: flex
+    justify-content: center
+    align-items: flex-start
+    flex-wrap: wrap
+
+    .main-icon
+      margin-left: 20px
+      margin-right: 20px
+
+  .main-icons_grid-four
+    .main-icon
+      width: 25%
+      margin-left: 0px
+      margin-right: 0px
+
+  .main-icons_grid-three
+    align-items: center
+
+    .main-icon
+      max-width: none
+      width: 33.3%
+      margin-left: 0
+      margin-right: 0
+
+    .main-icon__icon
+      min-width: 56px
+      text-align: center
+  
+  .main-icons_grid-half
+    .main-icon
+      max-width: none
+      width: 40%
+      margin-left: 2%
+      margin-right: 2%
+
+  .main-icons_push.main-icons_grid-three
+    align-items: flex-start
+  /* end media min width 768 pixels */
+
+
+
+/* Min width 1000 pixels */
+@media only screen and (min-width: 1000px)
+  .contact
+    &-item
+      &__txt
+        font-size: 17px
+
+  .main-icon
+    max-width: none
+
+  .contact-item
+    margin-left: 45px
+
+  .social_header
+    margin-left: 7px
+
+  .main-icon_column
+    .main-icon__icon
+      min-height: 120px
+      line-height: 120px
+
+  .main-icon__txt
+    font-size: 19px
+    line-height: 1.53
+
+  .main-icons_grid-four
+    margin-left: -8px
+    margin-right: -8px
+
+  .main-icons_grid-four .main-icon
+    padding-left: 8px
+    padding-right: 8px
+  
+  .main-icons_grid-three
+    align-items: center
+
+    .main-icon
+      max-width: none
+      width: 33.3%
+      margin-left: 0
+      margin-right: 0
+      justify-content: center
+
+    .main-icon__icon
+      min-width: 100px
+
+    .main-icon__txt
+      font-size: 16px
+      line-height: 20px
+
+  .main-icons_grid-half
+    margin-top: 40px
+
+    .main-icon
+      max-width: none
+      width: 46%
+      margin-left: 2%
+      margin-right: 2%
+      margin-bottom: 40px
+
+      &__icon
+        min-width: 102px
+
+  .main-icon-content__txt
+    font-size: 19px
+    line-height: 1.53
+
+  .main-icon-content__tt
+    font-size: 30px
+    line-height: 1
+
+    &_sm
+      font-size: 20px
+
+  .main-icon-content__price
+    font-size: 20px
+    line-height: 1
+
+  .main-icon_column
+    .main-icon__icon
+      text-align: center
+
+  .main-icon_column
+    .main-icon__icon
+      min-height: 120px
+      line-height: 120px
+
+  .main-icons_grid-three
+    .main-icon_column
+      justify-content: flex-start
+
+  .main-icons.main-icons_grid-four
+    margin-top: 80px
+
+  .main-icons.main-icons_grid-three
+    margin-top: 40px
+
+  .main-icons__wrapp-right.main-icon
+    justify-content: flex-end
+
+  .main-icons.main-icons_grid-half
+    margin-top: 90px
+    margin-left: -2%
+    margin-right: -2%
+
+    .main-icon__icon
+      margin-right: 27px
+
+  .particl-box
+    margin-left: 110px
+
+  .main-icons_push.main-icons_grid-three
+    margin-top: 100px
+    margin-bottom: 100px
+
+    .main-icon__icon
+      margin-bottom: 46px
+
+  /* end media min width 1000 pixels */
+
+
+/* Min width 1220 pixels */
+@media only screen and (min-width: 1220px)
+  .main-icons_grid-three
+    .main-icon__txt
+      font-size: 19px
+      line-height: 1.53
+
+  .main-icon-content__tt
+    &_sm
+      font-size: 24px
+
+  .main-icon-content__price
+    font-size: 24px
+
+  .main-icons.main-icons_grid-half
+    .main-icon
+      margin-bottom: 60px
+
+  .main-icon__icon_wrap1
+    position: relative
+    top: -20px
+
+  .main-icon__icon_wrap2
+    position: relative
+    left: 15px
+
+  .main-icons_push.main-icons_grid-three
+    margin: 190px -15px 100px
+    
+    .main-icon
+      padding-left: 15px
+      padding-right: 15px
+
+  /* end media min width 1220 pixels */
+
+/* ----- END Points --------------- */
+/*                                  */
+/*                                  */

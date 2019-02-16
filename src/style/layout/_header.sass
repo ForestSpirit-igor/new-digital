@@ -1,0 +1,68 @@
+/* ----- Header ------------------------ */
+.header
+  position: relative
+  background-color: $cl-light-2
+
+.header-top
+  background-color: $cl-site-second
+  padding: 10px 0 10px
+
+.logo
+  a
+    display: inline-block
+    outline: none
+    font-family: $site-font-family-2, Arial, sans-serif
+    font-size: 36px
+    font-weight: bold
+    line-height: 1
+    color: $cl-mariner
+    text-decoration: none
+    padding: 15px 0
+    span
+      color: $cl-azure-radiance
+    &:hover
+      color: darken($cl-mariner, 5%)
+      span
+        color: darken($cl-azure-radiance, 5%)
+
+.contact_header
+  float: right
+  padding-top: 8px
+  .contact-item__txt
+    display: none
+
+.social_header
+  float: left
+
+/* Min width 768 pixels */
+@media only screen and (min-width: 768px)
+  .logo_header
+    float: left
+
+  .contact_header
+    .contact-item__txt
+      display: inline-block
+
+  /* end media min width 768 pixels */
+
+/* Min width 1000 pixels */
+@media only screen and (min-width: 1000px)
+  .header-top
+    padding-bottom: 6px
+
+  .logo_header
+    padding-top: 32px
+    padding-bottom: 32px
+
+    a
+      font-size: 40px
+  /* end media min width 1000 pixels */
+
+/* Min width 1220 pixels */
+@media only screen and (min-width: 1220px)
+  .logo_header
+    margin-left: 50px
+  /* end media min width 1220 pixels */
+/* ----- END Header -------------------- */
+/*                                       */
+/*                                       */

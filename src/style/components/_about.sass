@@ -1,0 +1,235 @@
+/* ----- About ------------------- */
+.about
+  margin: 40px 0
+
+  &__img
+    position: relative
+    display: inline-block
+    max-width: 340px
+    margin: 0 auto 40px
+
+    &:before
+      content: ' '
+      position: absolute
+      bottom: -15px
+      right: -15px
+      width: 100%
+      height: 100%
+      z-index: -2
+      background-image: linear-gradient(17deg, #0d3692, #01b0f6), linear-gradient(59deg, #0779c5, #01aff4 99%)
+
+    &:after
+      content: ' '
+      position: absolute
+      bottom: -8px
+      right: -8px
+      width: 100%
+      height: 100%
+      z-index: -1
+      background-color: #fff
+
+.about-list-item
+  display: flex
+  justify-content: flex-start
+  align-items: flex-start
+  margin-bottom: 30px
+
+  &__icon
+    flex-shrink: 0
+    margin-right: 10px
+    width: 46px
+    text-align: right
+
+  &__txt
+    margin-bottom: 0px
+
+/* Min width 768 pixels */
+@media only screen and (min-width: 768px)
+  .about__img
+    position: absolute
+    top: 60px
+    left: -230px
+    width: 200px
+    margin-bottom: 0
+
+  .about
+    position: relative
+    margin-left: 230px
+
+  .about__txt, .about-list-item__txt
+    font-size: 16px
+
+  .about_wrapp-left
+    margin-right: 230px
+    margin-left: 0
+
+    .about__img
+      right: -230px
+      left: auto
+  /* end media min width 768 pixels */
+
+
+/* Min width 1000 pixels */
+@media only screen and (min-width: 1000px)
+  .about__img
+    top: 85px
+    left: -330px
+    width: 300px
+
+  .about
+    margin-left: 330px
+
+  .about_wrapp-left
+    margin-right: 330px
+    margin-left: 0
+
+    .about__img
+      right: -330px
+
+  .about__txt, .about-list-item__txt
+    font-size: 19px
+
+  .about-list-item
+    align-items: center
+
+    &__icon
+      width: 92px
+
+  .about_wrapp-content
+    .title-site, h1, h2, .btn
+      margin-left: 101px
+
+  .about
+    margin-top: 130px
+    margin-bottom: 100px
+  /* end media min width 1000 pixels */
+
+
+/* Min width 1220 pixels */
+@media only screen and (min-width: 1220px)
+  .about
+    margin-left: 405px
+
+    .title-site_h2, h2
+      margin-bottom: 40px
+
+    .about-list
+      margin-top: 40px
+      margin-bottom: 60px
+
+  .about_wrapp-left
+    margin-right: 405px
+    margin-left: 0
+
+    .about__img
+      right: -405px
+
+  .about__txt
+    margin-bottom: 30px
+  
+  .about_wrapp-step1
+    margin-right: 445px
+    margin-bottom: 150px
+
+    .title-site_h2, h2
+      margin-bottom: 60px
+
+    .about__img
+      right: -445px
+      width: 380px
+      top: 75px
+
+    .btn
+      margin-top: 35px
+  
+  .about_wrapp-step2
+    margin-left: 470px
+
+    .about__img
+      left: -470px
+      width: 400px
+      top: 45px
+
+    .title-site_h2, h2
+      margin-bottom: 100px
+
+    .btn
+      margin-top: 20px
+
+  .about__img
+    top: 95px
+    left: -405px
+    width: 350px
+    max-width: none
+
+  .about-list-item__icon
+    margin-right: 35px
+
+  .about_wrapp-content .title-site, .about_wrapp-content h1, .about_wrapp-content h2, .about_wrapp-content .btn
+    margin-left: 117px
+  /* end media min width 1220 pixels */
+
+
+
+/* Min width 1270 pixels */
+@media only screen and (min-width: 1270px)
+  .about__img
+    left: -430px
+    width: 390px
+
+  .about_wrapp-step1 .about__img
+    right: -455px
+    width: 430px
+
+  .about_wrapp-step2 .about__img
+    left: -505px
+    width: 450px
+
+  .about__img:before
+    bottom: -25px
+    right: -25px
+
+  .about__img:after
+    bottom: -13px
+    right: -13px
+
+  /* end media min width 1270 pixels */
+
+
+/* Min width 1440 pixels */
+@media only screen and (min-width: 1440px)
+  .about__img
+    left: -500px
+    width: 470px
+
+  .about_wrapp-step1 .about__img
+    right: -535px
+    width: 510px
+
+  .about_wrapp-step2 .about__img
+    left: -585px
+    width: 530px
+
+  /* end media min width 1440 pixels */
+
+
+/* Min width 1640 pixels */
+@media only screen and (min-width: 1640px)
+  .about__img
+    left: -595px
+    width: 530px
+
+  .about_wrapp-step1 .about__img
+    right: -625px
+    width: 560px
+
+  .about_wrapp-step2 .about__img
+    left: -655px
+    width: 540px
+    
+  /* end media min width 1640 pixels */
+
+
+/* ----- END About --------------- */
+/*                                 */
+/*                                 */

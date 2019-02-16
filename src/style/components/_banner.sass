@@ -1,0 +1,214 @@
+/* ----- Banner ------------------- */
+.banner-section
+  border-top: 8px solid $cl-cerulean
+  background-color: $cl-site
+  background-image: linear-gradient(56deg, $cl-site, $cl-curious-blue)
+  padding: 30px 0
+  position: relative
+
+  &_sm
+    border-top: none
+    background-image: linear-gradient(56deg, #003399, #004492)
+
+  &:before
+    content: ' '
+    position: absolute
+    top: 0
+    bottom: 0
+    right: 0
+    left: 0
+    background: linear-gradient(to bottom, rgba(30,87,153,1) 0%, rgba(30,87,153,.6) 70%, rgba(125,185,232,0) 100%)
+    z-index: 1
+
+.banner
+  text-align: center
+  color: #fff
+  position: relative
+  z-index: 1
+
+  &_middle
+    min-height: 350px
+    display: flex
+    justify-content: center
+    flex-direction: column
+    align-items: center
+
+  .title-site, h1, h2
+    font-size: 30px
+    line-height: 1
+    color: $cl-light-2
+
+  &__sale
+    position: relative
+    z-index: 1
+    font-family: $site-font-family-2, Arial, sans-serif
+    font-size: 30px
+    font-weight: 800
+    line-height: 1
+    text-align: left
+    color: #fa4a33
+    padding: 10px 20px 10px 55px
+    min-width: 280px
+    display: inline-block
+    margin: 0 auto 20px
+
+    &:before
+      content: ' '
+      position: absolute
+      top: 0
+      left: 0
+      bottom: 0
+      right: 0
+      background: url(../img/icon/arrow-price.png) 0 0 no-repeat
+      background-size: 100% 100%
+      z-index: -1
+
+  &__txt
+    font-size: 16px
+    font-weight: 600
+    line-height: 1.29
+    color: $cl-light-2
+    margin-bottom: 20px
+
+    &_md
+      font-size: 20px
+      font-family: $site-font-family-2, Arial, sans-serif
+      font-weight: 700
+      margin-bottom: 0
+
+.particles-js
+  position: absolute
+  top: 50%
+  left: 0
+  right: 0
+  bottom: 0
+
+.particles-js-step2
+  position: absolute
+  top: 0
+  left: 0
+  bottom: 0
+  right: 0
+
+.particles-js-step3
+  position: absolute
+  top: 0
+  right: 0
+  bottom: 0
+  width: 700px
+  z-index: -1
+
+.particl-box
+  position: relative
+  z-index: 1
+
+  .particles-js-step3
+    display: none
+
+
+/* Min width 768 pixels */
+@media only screen and (min-width: 768px)
+  .banner__sale
+    min-width: 380px
+    font-size: 40px
+    padding: 15px 20px 15px 80px
+    left: -5px
+
+  .banner__txt
+    font-size: 24px
+
+    &_md
+      font-size: 22px
+
+  .banner .title-site_h1, .banner h1
+    margin-bottom: 20px
+    font-size: 60px
+
+  .banner_middle
+    .main-icon__txt
+      font-size: 19px
+      line-height: 1.53
+  /* end media min width 768 pixels */
+
+
+
+/* Min width 1000 pixels */
+@media only screen and (min-width: 1000px)
+  .banner .title-site, .banner h1, .banner h2
+    font-size: 50px
+
+  .banner_middle
+    min-height: 640px
+
+    .main-icons
+      margin-top: 20px
+
+  .banner .title-site_h1, .banner h1
+    margin-bottom: 20px
+    font-size: 80px
+
+  .banner__sale
+    font-size: 50px
+    min-width: 410px
+
+  .banner__txt
+    font-size: 32px
+    margin-bottom: 45px
+
+    &_md
+      font-size: 30px
+      margin-bottom: 10px
+
+  .banner_middle
+    .main-icon__txt
+      font-size: 30px
+
+    .main-icon__icon
+      margin-right: 20px
+
+    .main-icons .main-icon
+      margin-left: 50px
+      margin-right: 30px
+
+  .banner-section_sm
+    padding: 50px 0 40px
+
+  .banner_middle
+    padding: 50px 0
+
+  /* end media min width 1000 pixels */
+
+/* Min width 1220 pixels */
+@media only screen and (min-width: 1220px)
+  .banner .title-site_h1, .banner h1
+    font-size: 80px
+
+  .banner__txt
+    font-size: 38px
+
+    &_md
+      font-size: 36px
+      
+  .particl-box
+    .particles-js-step3
+      display: block
+  /* end media min width 1220 pixels */
+
+
+/* Min width 1440 pixels */
+@media only screen and (min-width: 1440px)
+  .particles-js-step3
+    right: -100px
+  /* end media min width 1440 pixels */
+
+
+/* Min width 1640 pixels */
+@media only screen and (min-width: 1640px)
+  .particles-js-step3
+    right: -220px
+  /* end media min width 1640 pixels */
+
+
+/* ----- END Banner --------------- */
+/*                                  */
+/*                                  */
